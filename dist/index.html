@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/main.css" />
+        <!--網頁title icon-->
+        <link rel="icon" href="/dist/img/favicon.ico" type="image/x-icon" />
+        <!--bootstrap css-->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+            crossorigin="anonymous"
+        />
+        <!--Google字型-->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Serif+TC:wght@500;900&display=swap"
+            rel="stylesheet"
+        />
+        <!--font awsome css link(https://fontawesome.com/v4.7.0/)-->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+
+        <link rel="shortcut icon" href="/dist/img/favicon.ico" type="image/x-icon" />
+        <title>reponsive Navbar Tutorial</title>
+    </head>
+    <body onload="init()">
+        <haeder class="main-header">
+            <div class="logo">
+                <a href="#">LOGO</a>
+            </div>
+
+            <input type="checkbox" class="menu-btn" id="menu-btn" />
+            <label for="menu-btn" class="menu-icon">
+                <span class="menu-icon__line"></span>
+            </label>
+
+            <ul class="nav-links">
+                <li class="nav-link">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="nav-link">
+                    <a href="#about">About</a>
+                </li>
+                <li class="nav-link">
+                    <a href="#">Portfolio</a>
+                </li>
+                <li class="nav-link">
+                    <a href="#">blog</a>
+                </li>
+                <li class="nav-link">
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </haeder>
+
+        <div class="hero" id="home">
+            <div class="">
+                <h4>Hello! I am Harry Huang.</h4>
+                <p><span id="typed"></span></p>
+            </div>
+        </div>
+        <main>
+            <div class="container" id="about">
+                <h1>About Me</h1>
+                <p>Intoduce</p>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ea, tempora beatae quia nam
+                    obcaecati.
+                </p>
+            </div>
+        </main>
+
+        <!--Contact me start-->
+        <contact class="main-contact" >
+            <div class="contact-me">
+                <h1>Contact with me</h1>
+                <p>
+                Me would love to respond to your queries and help you succeed.<br />Feel free to get in touch with me.
+                </p>
+                <div class="contact-box">
+                    <div class="contact-left">
+                        <h3>Sent your request</h3>
+                        <form action="" enctype="text/plain" accept-charset="utf-8">
+                            <div class="input-row">
+                            <div class="input-group">
+                                <label>Name</label>
+                                <input type="text" placeholder="" id="nameText" name="Name" value size="60"  required />
+                            </div>
+
+                            <div class="input-group">
+                                <label>Phone</label>
+                                <input placeholder="" id="telText" type="tel" name="Phone" value size="60" aria-invalid="false"/>
+                            </div>
+                            </div>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>Email</label>
+                                <input type="email" placeholder="" id="emailText" name="Email" value size="60"  required/>
+                            </div>
+
+                            <div class="input-group">
+                                <label>Subject</label>
+                                <input type="text" placeholder="" id="subText"
+                                
+                                name="Subject"
+                                value
+                                size="60"
+                                aria-invalid="false"
+                                
+                                required/>
+                            </div>
+                        </div>
+
+                        <label for="">Message</label>
+                        <textarea rows="10" placeholder="Your message" id="bodyText" 
+                        name="your-message"
+                        cols="40"
+                        aria-required="true"
+                        aria-invalid="false"
+                        required ></textarea>
+            <div>
+                <input class="button "type="submit" value="Send" onclick="submitHandler();" />
+                <a id="mailTo"></a>
+            </div>
+                    </form>
+                </div>
+                <div class="contact-right">
+                    <h3>Reach Me</h3>
+                    <table>
+                        <tr>
+                            <td>Email</td>
+                            <td>harryhunag362f@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Phone</td>
+                            <td>+886 978 634 416</td>
+                        </tr>
+                        <tr>
+                            <td>Address</td>
+                            <td><br /><br /></td>
+                        </tr>
+                    </table>
+                </div>
+                </div>
+            </div>
+        <contact/>
+        <!--Contact me end-->
+        <script src="js/main.js"></script>
+        <script src="js/vendor/typed/typed.min.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>

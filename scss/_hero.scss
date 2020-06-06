@@ -1,0 +1,26 @@
+.hero {
+    height: 100vh;
+    /*background: url('/dist/img/tpe.view.jpg') no-repeat bottom center;*/
+    background-size: cover;
+    
+    padding: 0 10vw;
+    /*grid-template-columns: repeat(auto-fill, minmax(450px,1fr));
+    display: grid;*/
+
+    h4{
+        position: absolute;
+        top:35vh;
+        color: rgba($color: #4467db, $alpha: 1.0);
+        font:normal 600 18px/18px 'Poppins', serif;
+        text-transform: uppercase;
+        margin: 0 0 20px 0 ;
+        letter-spacing: 3px;
+    }
+    p{
+        font: 50px "Bentham", serif;;
+        position: absolute;
+        top:40vh;
+        color: black;
+    }
+
+}
